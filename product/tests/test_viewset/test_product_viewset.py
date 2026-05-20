@@ -6,6 +6,7 @@ from product.factories import CategoryFactory, ProductFactory
 from order.factories import UserFactory
 from product.models import Product
 
+
 class TestProductViewSet(APITestCase):
     client = APIClient()
 
@@ -13,7 +14,7 @@ class TestProductViewSet(APITestCase):
         self.user = UserFactory()
 
         self.product = ProductFactory(
-            title= 'pro controller',
+            title='pro controller',
             price=200.00
         )
 

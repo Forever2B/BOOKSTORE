@@ -14,7 +14,7 @@ class OrderSerializer(serializers.ModelSerializer):
     def get_total(self, instance):
         total = sum([product.price for product in instance.product.all()])
         return total
-    
+
     class Meta:
         model = Order
         fields = ['product', 'total', 'user', 'products_id']
