@@ -36,3 +36,6 @@ jobs:
     - name: Test
       run: |
         poetry run python manage.py test
+      env:
+        SECRET_KEY: test-secret-key-for-ci
+        DEBUG: "True"
