@@ -45,6 +45,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]",
                     "Forever2B.pythonanywhere.com"]
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
