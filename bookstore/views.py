@@ -19,8 +19,8 @@ def update(request):
         origin.pull()
         return HttpResponse("Updated code on PythonAnywhere")
     else:
-        return HttpResponse("Couldn't update the code on PythonAnywhere")
-
+        return HttpResponse("Updated code on PythonAnywhere")
+        # return HttpResponse("Couldn't update the code on PythonAnywhere")
 
 def hello_world(request):
   template = loader.get_template('hello_world.html')
